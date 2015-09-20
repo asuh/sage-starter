@@ -248,12 +248,16 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
   browserSync.init({
-    files: ['{lib,templates}/**/*.php', '*.php'],
-    proxy: config.devUrl,
-    snippetOptions: {
-      whitelist: ['/wp-admin/admin-ajax.php'],
-      blacklist: ['/wp-admin/**']
+    files: ['*.html'],
+    server: {
+        baseDir: "./"
     }
+    //files: ['{lib,templates}/**/*.php', '*.php'],
+    //proxy: config.devUrl,
+    //snippetOptions: {
+    //  whitelist: ['/wp-admin/admin-ajax.php'],
+    //  blacklist: ['/wp-admin/**']
+    //}
   });
   gulp.watch([path.source + 'styles/**/*'], ['styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);

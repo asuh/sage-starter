@@ -18,6 +18,8 @@ var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
+var svgMin       = require('gulp-svgmin');
+var svgStore     = require('gulp-svgstore');
 var uglify       = require('gulp-uglify');
 
 // See https://github.com/austinpray/asset-builder
@@ -225,6 +227,18 @@ gulp.task('images', function() {
     .pipe(browserSync.stream());
 });
 
+// ### Svg
+// `gulp svg` - Minifies, injects and create fallbacks all svg files
+gulp.task('svg', function() {
+  return gulp.src(globs.svg)
+    .pipe(svgMin())
+    .pipe(svgStore({
+        inlineSvg: true
+    }));
+    .pipe(gulp.dest(path.dist + 'svg'))
+    .pipe(browserSync.stream());
+});
+
 // ### JSHint
 // `gulp jshint` - Lints configuration JSON and project JS.
 gulp.task('jshint', function() {
@@ -263,6 +277,7 @@ gulp.task('watch', function() {
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
+  gulp.watch([path.source + 'svg/**/*'], ['svg']);
   gulp.watch(['bower.json', 'assets/manifest.json'], ['build']);
 });
 
@@ -272,7 +287,7 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
-              ['fonts', 'images'],
+              ['fonts', 'images', 'svg'],
               callback);
 });
 

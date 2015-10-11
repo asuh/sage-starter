@@ -2,6 +2,7 @@
 var argv         = require('minimist')(process.argv.slice(2));
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync').create();
+var critical     = require('critical');
 var changed      = require('gulp-changed');
 var concat       = require('gulp-concat');
 var flatten      = require('gulp-flatten');
@@ -228,7 +229,7 @@ gulp.task('images', function() {
 });
 
 // ### Svg
-// `gulp svg` - Minifies, injects and create fallbacks all svg files
+// `gulp svg` - Minifies all svg files
 gulp.task('svg', function() {
   return gulp.src(globs.svg)
     .pipe(svgMin())
@@ -237,6 +238,31 @@ gulp.task('svg', function() {
     }));
     .pipe(gulp.dest(path.dist + 'svg'))
     .pipe(browserSync.stream());
+});
+
+// ### Critical and Rename
+// 'gulp critical' - Add inline critical CSS to <head> for faster rendering
+// Use in conjunction with LoadCSS
+// http://github.com/addyosmani/critical-path-css-demo
+gulp.task('copystyles', function () {
+    return gulp.src(['dist/styles/main.css'])
+        .pipe($.rename({
+            basename: "site" // site.css
+        }))
+        .pipe(gulp.dest('dist/styles'));
+});
+
+gulp.task('critical', ['build', 'copystyles'], function () {
+    critical.generate({
+        inline: true,
+        base: '.', // base directory
+        src: 'index.html', // if source is different, change here
+        //styleTarget: 'dist/styles/main.css',
+        dest: 'index.html', // file used on production site
+        width: 320, // viewport width for index.html
+        height: 480, // viewport height for index.html
+        minify: true
+    });
 });
 
 // ### JSHint

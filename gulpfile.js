@@ -235,7 +235,7 @@ gulp.task('svg', function() {
     .pipe(svgMin())
     .pipe(svgStore({
         inlineSvg: true
-    }));
+    }))
     .pipe(gulp.dest(path.dist + 'svg'))
     .pipe(browserSync.stream());
 });

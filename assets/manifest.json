@@ -11,9 +11,6 @@
         "styles/main.scss"
       ],
       "main": true
-    },
-    "jquery.js": {
-      "bower": ["jquery"]
     }
   },
   "config": {

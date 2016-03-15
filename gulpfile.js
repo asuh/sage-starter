@@ -265,7 +265,7 @@ gulp.task('critical', ['build', 'copystyles'], function () {
 // `gulp lint` - Lints configuration JSON and project JS.
 gulp.task('lint', function() {
   return gulp.src([
-    'bower.json', 'gulpfile.js'
+    'gulpfile.js'
   ].concat(project.js))
     .pipe(eslint())
     .pipe(eslint.format())

@@ -268,8 +268,8 @@ gulp.task('lint', function() {
     'bower.json', 'gulpfile.js'
   ].concat(project.js))
     .pipe(eslint())
-    .pipe(eslint.format)
-    .pipe(gulpif(enabled.failESLint, eslint.failAfterError));
+    .pipe(eslint.format())
+    .pipe(gulpif(enabled.failESLint, eslint.failAfterError()));
 });
 
 // ### Clean

@@ -28,11 +28,6 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
 * ARIA roles and microformats
 
-Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
-
-* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-
 ## Installation
 
 Clone the git repo - `git clone https://github.com/asuh/sage.git` and then rename the directory to the name of your theme or website.

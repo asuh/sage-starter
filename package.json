@@ -29,7 +29,7 @@
   "devDependencies": {
     "asset-builder": "^1.1.0",
     "browser-sync": "^2.11.1",
-    "critical": "^0.6.0",
+    "critical": "^0.7.2",
     "del": "^2.0.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -47,7 +47,7 @@
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-svgmin": "^1.2.2",
-    "gulp-svgstore": "^5.0.5",
+    "gulp-svgstore": "^6.0.0",
     "gulp-uglify": "^1.5.3",
     "imagemin-pngcrush": "^4.1.0",
     "lazypipe": "^1.0.1",
@@ -55,6 +55,6 @@
     "minimist": "^1.2.0",
     "run-sequence": "^1.1.5",
     "traverse": "^0.6.6",
-    "wiredep": "^3.0.0"
+    "wiredep": "^4.0.0"
   }
 }

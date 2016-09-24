@@ -12,7 +12,7 @@ Sage Starter is a starter theme based on Sage 8.5, HTML5 Boilerplate, gulp, and 
 
 | Prerequisite    | How to check | How to install
 | --------------- | ------------ | ------------- |
-| Node.js 4.5     | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| Node.js >= 4.5  | `node -v`    | [nodejs.org](http://nodejs.org/) |
 | gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
 | Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 

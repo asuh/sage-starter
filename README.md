@@ -1,10 +1,10 @@
 # [Sage Starter](https://github.com/asuh/sage/)
 [![devDependency Status](https://david-dm.org/asuh/sage-starter/dev-status.svg)](https://david-dm.org/asuh/sage-starter#info=devDependencies)
 
-Sage Starter is a starter theme based on Sage, HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+Sage Starter is a starter theme based on Sage 8.5, HTML5 Boilerplate, gulp, and Bower that will help you make better themes.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
+* Homepage: [https://github.com/roots/sage/](https://github.com/roots/sage/)
 * Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
 * Twitter: [@asuh](https://twitter.com/asuh)
 
@@ -12,7 +12,7 @@ Sage Starter is a starter theme based on Sage, HTML5 Boilerplate, gulp, Bower, a
 
 | Prerequisite    | How to check | How to install
 | --------------- | ------------ | ------------- |
-| Node.js 0.12.x  | `node -v`    | [nodejs.org](http://nodejs.org/) |
+| Node.js 4.5     | `node -v`    | [nodejs.org](http://nodejs.org/) |
 | gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
 | Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
 
@@ -24,16 +24,10 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
-* [Sass](https://github.com/twbs/bootstrap-sass) [Bootstrap](http://getbootstrap.com/)
-* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
-* ARIA roles and microformats
 
 ## Installation
 
-Clone the git repo - `git clone https://github.com/asuh/sage.git` and then rename the directory to the name of your theme or website.
-
-## Configuration
-
+Clone the git repo - `git clone https://github.com/asuh/sage-starter.git` and then rename the directory to the name of your theme or website.
 
 ## Theme development
 
@@ -81,3 +75,7 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
 ## Documentation
 
 Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+
+##Contributing
+
+Contributions are welcome and encouraged from everyone!

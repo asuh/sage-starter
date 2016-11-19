@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "bower install && gulp",
-    "eslint": "gulp lint"
+    "lint": "gulp lint"
   },
   "engines": {
     "node": ">= 4.5"

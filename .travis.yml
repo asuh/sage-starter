@@ -13,9 +13,9 @@ cache:
 
 install:
   - npm install -g npm@latest
-  - npm install -g bower gulp
+  - npm install -g bower gulp eslint
   - npm install
 
 script:
   - npm run build
-  - npm run eslint
+  - npm run lint

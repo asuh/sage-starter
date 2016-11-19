@@ -19,8 +19,7 @@
   ],
   "scripts": {
     "build": "bower install && gulp",
-    "jshint": "gulp eslint",
-    "jscs": "jscs gulpfile.js assets/scripts/*.js"
+    "eslint": "gulp lint"
   },
   "engines": {
     "node": ">= 4.5"

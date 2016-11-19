@@ -228,7 +228,7 @@ gulp.task('images', function() {
 // `gulp svg` - Minifies all svg files
 gulp.task('svg', function() {
     var svgPath = path.source + 'svg/*.svg';
-    //var svg = gulp.src(svgPath)
+    var svg = gulp.src(svgPath)
     .pipe(svgMin())
     .pipe(svgStore({
         inlineSvg: true

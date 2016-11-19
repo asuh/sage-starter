@@ -32,7 +32,8 @@ var manifest = require('asset-builder')('./assets/manifest.json');
 var path = manifest.paths;
 
 // `config` - Store arbitrary configuration values here.
-var config = manifest.config || {};
+// var config = manifest.config || {};
+// 2016-11-19 - commented out because it is unused
 
 // `globs` - These ultimately end up in their respective `gulp.src`.
 // - `globs.js` - Array of asset-builder JS dependency objects. Example:
@@ -227,7 +228,7 @@ gulp.task('images', function() {
 // `gulp svg` - Minifies all svg files
 gulp.task('svg', function() {
     var svgPath = path.source + 'svg/*.svg';
-    var svg = gulp.src(svgPath)
+    //var svg = gulp.src(svgPath)
     .pipe(svgMin())
     .pipe(svgStore({
         inlineSvg: true

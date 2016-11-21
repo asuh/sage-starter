@@ -227,13 +227,12 @@ gulp.task('images', function() {
 // ### Svg
 // `gulp svg` - Minifies all svg files
 gulp.task('svg', function() {
-    var svgPath = path.source + 'svg/*.svg';
-    var svg = gulp.src(svgPath)
+    gulp.src(path.source + 'images/sprite/*.svg')
     .pipe(svgMin())
     .pipe(svgStore({
         inlineSvg: true
     }))
-    .pipe(gulp.dest(path.dist + 'svg'))
+    .pipe(gulp.dest(path.dist + 'images/sprite'))
     .pipe(browserSync.stream());
 });
 

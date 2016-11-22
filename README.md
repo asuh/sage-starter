@@ -1,10 +1,12 @@
 # [Sage Starter](https://github.com/asuh/sage/)
 [![devDependency Status](https://david-dm.org/asuh/sage-starter/dev-status.svg)](https://david-dm.org/asuh/sage-starter#info=devDependencies)
+[![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/asuh/sage-starter)
+
 
 Sage Starter is a starter theme based on Sage 8.5, HTML5 Boilerplate, gulp, and Bower that will help you make better themes.
 
+* Homepage: [https://github.com/asuh/sage-starter/](https://github.com/asuh/sage-starter/)
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://github.com/roots/sage/](https://github.com/roots/sage/)
 * Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
 * Twitter: [@asuh](https://twitter.com/asuh)
 
@@ -71,6 +73,35 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
   }
 ...
 ```
+
+### SVG support
+
+Sage Starter has built-in SVG support! The preferred method for using SVG as implemented is an SVG sprite.
+
+#### Usage
+
+Make sure each SVG has an ID.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="twitter" viewBox="0 0 64 64">
+        <title>Twitter</title>
+        <path etc.../>
+    </symbol>
+</svg>
+```
+
+Save any SVG files you want to use into `/assets/images/sprites` and the build process will combine all of those images into one sprite.
+
+To use in markup, apply the ID to an SVG's Use element.
+
+```svg
+<svg role="img" title="Twitter">
+    <use xlink:href="map.svg#twitter"/>
+</svg>
+```
+
+Check out [SVG For Everybody](https://github.com/jonathantneal/svg4everybody) for IE and Edge 12 support of SVG sprites.
 
 ## Documentation
 

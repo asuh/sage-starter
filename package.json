@@ -17,6 +17,10 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
+  "browserslist": [
+    "last 2 versions",
+    "android 4"
+  ],
   "scripts": {
     "build": "bower install && gulp",
     "lint": "gulp lint"
@@ -27,6 +31,7 @@
   "devDependencies": {
     "asset-builder": "^1.1.0",
     "browser-sync": "^2.11.1",
+    "browserslist": "^2.1.4",
     "critical": "^0.8.0",
     "del": "^2.0.2",
     "gulp": "^3.9.1",

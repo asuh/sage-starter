@@ -1,10 +1,11 @@
 // ## Globals
 var argv         = require('minimist')(process.argv.slice(2));
-var autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('autoprefixer');
 var browserSync  = require('browser-sync').create();
 var critical     = require('critical');
 var changed      = require('gulp-changed');
 var concat       = require('gulp-concat');
+var cssnano      = require('cssnano');
 var flatten      = require('gulp-flatten');
 var gulp         = require('gulp');
 var gulpif       = require('gulp-if');
@@ -13,7 +14,6 @@ var eslint       = require('gulp-eslint');
 var lazypipe     = require('lazypipe');
 var less         = require('gulp-less');
 var merge        = require('merge-stream');
-var cssNano      = require('gulp-cssnano');
 var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
@@ -107,10 +107,8 @@ var cssTasks = function(filename) {
       }));
     })
     .pipe(concat, filename)
-    .pipe(autoprefixer, {})
-    .pipe(cssNano, {
-      safe: true
-    })
+    .pipe(postcss([ autoprefixer(grid: true) ]))
+    .pipe(postcss([ cssNano({ safe: true })
     .pipe(function() {
       return gulpif(enabled.rev, rev());
     })

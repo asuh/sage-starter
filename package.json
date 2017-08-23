@@ -1,6 +1,6 @@
 {
   "name": "sage-starter",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Micah Cambre <micah@twolanedesign.com>",
   "homepage": "https://twolanedesign.com",
   "private": true,
@@ -19,7 +19,7 @@
   ],
   "browserslist": [
     "last 2 versions",
-    "android 4"
+    "not bb < 10"      
   ],
   "scripts": {
     "build": "bower install && gulp",
@@ -30,23 +30,23 @@
   },
   "devDependencies": {
     "asset-builder": "^1.1.0",
-    "browser-sync": "^2.11.1",
-    "browserslist": "^2.1.4",
-    "critical": "^0.8.0",
-    "del": "^2.0.2",
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "browserslist": "^2.3.3",
+    "critical": "^0.9.0",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
     "gulp-changed": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.1",
     "gulp-flatten": "^0.3.1",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
-    "gulp-eslint": "^3.0.1",
+    "gulp-eslint": "^4.0.0",
     "gulp-less": "^3.0.5",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-rev": "^7.0.0",
+    "gulp-rev": "^8.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-svgmin": "^1.2.2",
@@ -56,7 +56,7 @@
     "lazypipe": "^1.0.1",
     "merge-stream": "^1.0.0",
     "minimist": "^1.2.0",
-    "run-sequence": "^1.1.5",
+    "run-sequence": "^2.1.0",
     "traverse": "^0.6.6",
     "wiredep": "^4.0.0"
   }

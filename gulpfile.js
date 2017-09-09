@@ -15,6 +15,7 @@ var lazypipe     = require('lazypipe');
 var less         = require('gulp-less');
 var merge        = require('merge-stream');
 var plumber      = require('gulp-plumber');
+var postcss      = require('gulp-postcss');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');

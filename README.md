@@ -37,7 +37,7 @@ Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bowe
 
 ### Install gulp and Bower
 
-Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
+Building the theme requires [node.js](http://nodejs.org/download/). For best results, update to the latest version of npm: `npm install -g npm@latest` or use your favorite package manager like [Homebrew](https://brew.sh/).
 
 From the command line:
 
@@ -91,7 +91,7 @@ Make sure each SVG has an ID.
 </svg>
 ```
 
-Save any SVG files you want to use into `/assets/images/sprites` and the build process will combine all of those images into one sprite.
+Save any SVG files you want to use into `/assets/images/sprites` and the build process will combine all of those images into `/assets/images/sprites/sprite.svg`.
 
 To use in markup, apply the ID to an SVG's Use element.
 
@@ -101,12 +101,12 @@ To use in markup, apply the ID to an SVG's Use element.
 </svg>
 ```
 
-Check out [SVG For Everybody](https://github.com/jonathantneal/svg4everybody) for IE and Edge 12 support of SVG sprites.
+Check out [SVG For Everybody](https://github.com/jonathantneal/svg4everybody) for IE and <=Edge 12 support of SVG sprites.
 
 ## Documentation
 
 Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
 
-##Contributing
+## Contributing
 
 Contributions are welcome and encouraged from everyone!

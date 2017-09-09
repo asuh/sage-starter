@@ -107,7 +107,7 @@ var cssTasks = function(filename) {
       }));
     })
     .pipe(concat, filename)
-    .pipe(postcss([ autoprefixer(grid: true) ]))
+    .pipe(postcss([ autoprefixer({ grid: true }) ]))
     .pipe(postcss([ cssNano({ safe: true }) ]))
     .pipe(function() {
       return gulpif(enabled.rev, rev());

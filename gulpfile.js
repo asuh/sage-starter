@@ -89,6 +89,10 @@ var onError = function (err) {
 //   .pipe(gulp.dest(path.dist + 'styles'))
 // ```
 var cssTasks = function(filename) {
+  var plugins = [
+    autoprefixer({ grid:true }),
+    cssnano()
+  ];
   return lazypipe()
     .pipe(function() {
       return gulpif(!enabled.failStyleTask, plumber());
@@ -108,8 +112,7 @@ var cssTasks = function(filename) {
       }));
     })
     .pipe(concat, filename)
-    .pipe(postcss([ autoprefixer() ]))
-    .pipe(postcss([ cssNano({ safe: true }) ]))
+    .pipe(postcss(plugins))
     .pipe(function() {
       return gulpif(enabled.rev, rev());
     })

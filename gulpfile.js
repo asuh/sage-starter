@@ -112,7 +112,9 @@ var cssTasks = function(filename) {
       }));
     })
     .pipe(concat, filename)
-    .pipe(postcss(plugins))
+    .pipe(function() {
+      return postcss(plugins))
+    })
     .pipe(function() {
       return gulpif(enabled.rev, rev());
     })

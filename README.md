@@ -91,7 +91,7 @@ Make sure each SVG has an ID.
 </svg>
 ```
 
-Save any SVG files you want to use into `/assets/images/sprites` and the build process will combine all of those images into `/assets/images/sprites/sprite.svg`.
+Save any SVG files you want to use into `/assets/images/sprite` and the build process will combine all of those images into `/assets/images/sprite/sprite.svg`.
 
 To use in markup, apply the ID to an SVG's Use element.
 

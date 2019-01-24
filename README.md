@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/asuh/sage-starter)
 
 
-Sage Starter is a starter theme based on Sage 8.5, HTML5 Boilerplate, gulp, and Bower that will help you make better themes.
+Sage Starter is a starter theme based on Sage 8.6, HTML5 Boilerplate, gulp, and Bower that will help you make better websites.
 
 * Homepage: [https://github.com/asuh/sage-starter/](https://github.com/asuh/sage-starter/)
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
@@ -12,20 +12,22 @@ Sage Starter is a starter theme based on Sage 8.5, HTML5 Boilerplate, gulp, and 
 
 ## Requirements
 
-| Prerequisite    | How to check | How to install
-| --------------- | ------------ | ------------- |
-| Node.js >= 4.5  | `node -v`    | [nodejs.org](http://nodejs.org/) |
-| gulp >= 3.8.10  | `gulp -v`    | `npm install -g gulp` |
-| Bower >= 1.3.12 | `bower -v`   | `npm install -g bower` |
+| Prerequisite      | How to check | How to install
+| ----------------- | ------------ | ------------- |
+| PHP >= 5.4.x      | `php -v`     | [php.net](https://secure.php.net/manual/en/install.php) |
+| Node.js >= 6.9    | `node -v`    | [nodejs.org](https://nodejs.org/) |
+| gulp-cli >= 2.0.0 | `gulp -v`    | `npm install -g gulp-cli` |
+| Bower >= 1.3.12   | `bower -v`   | `npm install -g bower` |
 
 For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
 
 ## Features
 
-* [gulp](http://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
-* [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
-* [Bower](http://bower.io/) for front-end package management
+* [gulp](https://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
+* [BrowserSync](https://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
+* [Bower](https://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
+* ARIA roles and microformats
 
 ## Installation
 
@@ -33,16 +35,16 @@ Clone the git repo - `git clone https://github.com/asuh/sage-starter.git` and th
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Sage Starter uses [gulp](https://gulpjs.com/) as its build system and [Bower](https://bower.io/) to manage front-end packages.
 
 ### Install gulp and Bower
 
-Building the theme requires [node.js](http://nodejs.org/download/). For best results, update to the latest version of npm: `npm install -g npm@latest` or use your favorite package manager like [Homebrew](https://brew.sh/).
+Building the theme requires [node.js](https://nodejs.org/download/). For best results, update to the latest version of npm: `npm i -g npm@latest` or use your favorite package manager like [Homebrew](https://brew.sh/).
 
 From the command line:
 
-1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
-2. Navigate to the theme directory, then run `npm install`
+1. Install [gulp-cli](https://gulpjs.com) and [Bower](https://bower.io/) globally with `npm i -g gulp bower`
+2. Navigate to the theme directory, then run `npm i`
 3. Run `bower install`
 
 You now have all the necessary dependencies to run the build process.
@@ -57,11 +59,11 @@ You now have all the necessary dependencies to run the build process.
 
 To use BrowserSync during `gulp watch` you need to update `devUrl` at the bottom of `assets/manifest.json` to reflect your local development hostname.
 
-For example, if your local development URL is `http://project-name.dev` you would update the file to read:
+For example, if your local development URL is `http://project-name.test` you would update the file to read:
 ```json
 ...
   "config": {
-    "devUrl": "http://project-name.dev"
+    "devUrl": "http://project-name.test"
   }
 ...
 ```
@@ -105,7 +107,7 @@ Check out [SVG For Everybody](https://github.com/jonathantneal/svg4everybody) fo
 
 ## Documentation
 
-Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+Sage Starter documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
 
 ## Contributing
 

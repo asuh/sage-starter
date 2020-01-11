@@ -37,7 +37,7 @@
     "cssnano": "~4.1.8",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
-    "gulp-changed": "^3.2.0",
+    "gulp-changed": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-flatten": "^0.4.0",
     "gulp-if": "^2.0.2",

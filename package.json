@@ -53,7 +53,7 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.1",
-    "imagemin-pngcrush": "^6.0.0",
+    "imagemin-pngcrush": "^7.0.0",
     "lazypipe": "^1.0.2",
     "merge-stream": "^2.0.0",
     "minimist": "^1.2.0",

@@ -29,7 +29,7 @@
     "node": ">= 6.9"
   },
   "devDependencies": {
-    "asset-builder": "github:mmirus/asset-builder",
+    "asset-builder": "github:austinpray/asset-builder",
     "autoprefixer": "^9.4.6",
     "browser-sync": "^2.26.3",
     "browserslist": "^4.4.1",

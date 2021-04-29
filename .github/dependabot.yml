@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cssnano
+    versions:
+    - 5.0.0
+  - dependency-name: autoprefixer
+    versions:
+    - 10.2.4
+  - dependency-name: critical
+    versions:
+    - 3.0.0

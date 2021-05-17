@@ -14,10 +14,13 @@ Sage Starter is a starter theme based on Sage 8.6, HTML5 Boilerplate, gulp, and 
 
 | Prerequisite      | How to check | How to install
 | ----------------- | ------------ | ------------- |
-| PHP >= 5.4.x      | `php -v`     | [php.net](https://secure.php.net/manual/en/install.php) |
 | Node.js >= 6.9    | `node -v`    | [nodejs.org](https://nodejs.org/) |
 | gulp-cli >= 2.0.0 | `gulp -v`    | `npm install -g gulp-cli` |
 | Bower >= 1.3.12   | `bower -v`   | `npm install -g bower` |
+| Optional | | |
+| PHP >= 7.x.x      | `php -v`     | [php.net](https://www.php.net/manual/en/install.php) |
+
+PHP is optional, but use the latest PHP version that's available.
 
 For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
 
@@ -39,7 +42,7 @@ Sage Starter uses [gulp](https://gulpjs.com/) as its build system and [Bower](ht
 
 ### Install gulp and Bower
 
-Building the theme requires [node.js](https://nodejs.org/download/). For best results, update to the latest version of npm: `npm i -g npm@latest` or use your favorite package manager like [Homebrew](https://brew.sh/).
+Building the theme requires [node.js](https://nodejs.org/download/). For best results, update to the latest version of npm: `npm i -g npm@latest`. I personally recommend using [NVM](https://github.com/nvm-sh/nvm).
 
 From the command line:
 
@@ -107,7 +110,7 @@ Check out [SVG For Everybody](https://github.com/jonathantneal/svg4everybody) fo
 
 ## Documentation
 
-Sage Starter documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+Sage documentation is available at [https://roots.io/docs/sage/8.x/installation/](https://roots.io/docs/sage/8.x/installation/). These instructions aren't consistent with Sage Starter but provide a basis for installation and running Gulp.
 
 ## Contributing
 

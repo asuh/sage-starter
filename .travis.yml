@@ -1,14 +1,14 @@
 sudo: false
 language: node_js
 node_js:
+  - "12"
   - "8"
-  - "7"
   - "6"
   - "node"
 
 env:
-  - TRAVIS_NODE_VERSION="7"
   - TRAVIS_NODE_VERSION="8"
+  - TRAVIS_NODE_VERSION="12"
 
 cache:
   directories:
@@ -19,7 +19,7 @@ cache:
 install:
   - source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
   - travis_retry npm install -g npm@latest
-  - travis_retry npm install -g bower gulp eslint
+  - travis_retry npm install -g bower gulp
   - node -v && npm -v && bower -v && gulp -v
   - npm rebuild
   - travis_retry npm install

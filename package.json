@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "asset-builder": "github:austinpray/asset-builder",
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "browser-sync": "^2.26.3",
     "browserslist": "^4.4.1",
     "critical": "^3.1.0",
-    "cssnano": "~5.0.2",
+    "cssnano": "~5.0.5",
     "del": "^6.0.0",
     "gulp": "^4.0.0",
     "gulp-changed": "3.2.0",

@@ -1,7 +1,5 @@
 # [Sage Starter](https://github.com/asuh/sage/)
 [![devDependency Status](https://david-dm.org/asuh/sage-starter/dev-status.svg)](https://david-dm.org/asuh/sage-starter#info=devDependencies)
-[![Build Status](https://img.shields.io/travis/roots/sage.svg?style=flat-square)](https://travis-ci.org/asuh/sage-starter)
-
 
 Sage Starter is a starter theme based on Roots Sage theme version 8.6, which references HTML5 Boilerplate, Gulp, and Bower that will help you make better websites.
 

@@ -2,7 +2,6 @@
 var argv         = require('minimist')(process.argv.slice(2));
 var autoprefixer = require('autoprefixer');
 var browserSync  = require('browser-sync').create();
-var critical     = require('critical').stream;
 var changed      = require('gulp-changed');
 var concat       = require('gulp-concat');
 var cssnano      = require('cssnano');
@@ -269,30 +268,13 @@ gulp.task('svg', function() {
     .pipe(browserSync.stream());
 });
 
-// ### Critical and Rename
-// 'gulp critical' - Add inline critical CSS to <head> for faster rendering
-// Use in conjunction with LoadCSS
-// http://github.com/addyosmani/critical-path-css-demo
+// ### Rename
 gulp.task('copystyles', function () {
     return gulp.src(['dist/styles/main.css'])
         .pipe($.rename({
             basename: "site" // site.css
         }))
         .pipe(gulp.dest('dist/styles'));
-});
-
-gulp.task('critical', function () {
-    return gulp
-      .src('dist/index.html')
-      .pipe(critical({
-        base: 'dist/',
-        inline: true,
-        css: ['dist/styles/main.css']
-      }))
-      .on('error', function(err) {
-        console.error(err.message)
-      })
-      .pipe(gulp.dest('dist'));
 });
 
 // ### Clean

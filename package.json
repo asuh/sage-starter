@@ -57,7 +57,7 @@
     "lazypipe": "^1.0.2",
     "merge-stream": "^2.0.0",
     "minimist": "^1.2.6",
-    "traverse": "^0.6.6",
+    "traverse": "^0.6.7",
     "wiredep": "^4.0.0"
   }
 }

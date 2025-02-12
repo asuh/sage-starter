@@ -1,12 +1,13 @@
+> [!NOTE]
+> I will deprecate this project in favor of a new starter theme based on Sage 9 called [Forage](https://github.com/asuh/forage). I highly recommend to switch to Forage which is in active development and has fewer dependencies.
+
 # [Sage Starter](https://github.com/asuh/sage/)
-[![devDependency Status](https://david-dm.org/asuh/sage-starter/dev-status.svg)](https://david-dm.org/asuh/sage-starter#info=devDependencies)
 
 Sage Starter is a starter theme based on Roots Sage theme version 8.6, which references HTML5 Boilerplate, Gulp, and Bower that will help you make better websites.
 
 * Homepage: [https://github.com/asuh/sage-starter/](https://github.com/asuh/sage-starter/)
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
-* Twitter: [@asuh](https://twitter.com/asuh)
 
 ## Requirements
 

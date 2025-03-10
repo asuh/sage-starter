@@ -40,7 +40,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-flatten": "^0.4.0",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-eslint": "^6.0.0",
     "gulp-less": "^5.0.0",
     "gulp-plumber": "^1.2.1",
